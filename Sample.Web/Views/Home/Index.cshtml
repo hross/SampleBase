@@ -1,0 +1,14 @@
+﻿@model WidgetViewModel
+
+@{ ViewBag.Title = "Widgets!"; }
+
+<div>
+    <h1>Widgets</h1>
+    <p class="lead">Keeping track of widgets, 1 at a time...</p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_WidgetStats", Model.Widgets)
+    </div>
+</div>
